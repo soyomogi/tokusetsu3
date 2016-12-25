@@ -149,11 +149,11 @@
   {block:IfOgImageImage}
     <meta name="twitter:image:src" content="{image:Og Image}">
     <meta property="og:image" content="{image:Og Image}" />
-  {block:IfOgImageImage}
+  {/block:IfOgImageImage}
   {block:IfNotOgImageImage}
     <meta name="twitter:image:src" content="{image:Header Image}">
     <meta property="og:image" content="{image:Header Image}" />
-  {block:IfNotOgImageImage}
+  {/block:IfNotOgImageImage}
 
   {block:IfNot00lEnableDarkMode}
   <link rel="stylesheet" href="http://static.tumblr.com/xxf6ewk/JtXof35hl/style-light.css" />
@@ -209,10 +209,10 @@ style="background-color: {color:Accent};"
         <a href="{text:03 l Circle URL}">
           {block:IfCircleLogoImage}
           <img class="labelName-logoImg" src="{image:Circle Logo}" alt="{text:03 l Circle Name}" style="width: {text:01 l Circle Logo Width}px;">
-          {block:IfCircleLogoImage}
+          {/block:IfCircleLogoImage}
           {block:IfNotCircleLogoImage}
             {text:03 l Circle Name}
-          {block:IfNotCircleLogoImage}
+          {/block:IfNotCircleLogoImage}
         </a>
       </div>
       {block:If01lEnableShareButtons}
@@ -446,7 +446,7 @@ style="background-color: {color:Accent};"
       {/block:If03lStore02Name}
       {block:If03lStore03Name}
       <a href="{text:03 l Store03 URL}" class="spec-buy-button btn">{text:03 l Store03 Name}</a>
-      {block:If03lStore03Name}
+      {/block:If03lStore03Name}
     {block:If03lStore01Name}
     </div>
   </div>
@@ -600,7 +600,7 @@ style="background-color: {color:Accent};"
         <div class="additionalContent-image-wrapper">
           <img src="{image:06 l Footer Additional Image}" class="additionalContent-image">
         </div>
-      {block:If06lFooterAdditionalImageImage}
+      {/block:If06lFooterAdditionalImageImage}
     </div>
   </div>
 </section>
@@ -688,7 +688,7 @@ style="background-color: {color:Accent};"
     </div>
   </div>
 </section>
-{block:IfBannerImage}
+{/block:IfBannerImage}
 
 {block:If01lEnableShareButtons}
 <section class="l-section section-share">
